@@ -7,7 +7,7 @@ import { ConfigModule } from '@nestjs/config';
 const password = process.env.PWD;
 @Module({
   imports: [authModule, UserModule, productModule, ConfigModule.forRoot(), MongooseModule.forRoot(
-    `mongodb+srv://node-rest:${password}@cluster1.fstlx.mongodb.net/rstdb?retryWrites=true&w=majority`
+    `mongodb+srv://node-rest:noderest@cluster1.fstlx.mongodb.net/rstdb?retryWrites=true&w=majority`
     )],
   
 })
